@@ -40,5 +40,9 @@ public class Task5 implements Task {
          * 3. С использованием отладчика проверьте корректность
          *    выполнения задания.
          */
+    for (int Item : array){
+        list.add(Item);
+        set.add(Item);
+    }
     }
 }
