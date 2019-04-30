@@ -47,7 +47,7 @@ public class Fibonacci implements Iterable<Integer> {
      * чисел Фибоначчи.
      */
     private static class FibonacciIterator implements Iterator<Integer> {
-         private int pos = -1;
+         private int pos = 0;
         
         
         /**
@@ -73,7 +73,13 @@ public class Fibonacci implements Iterable<Integer> {
          */
         @Override
         public Integer next() {
+            
           pos++;
+          if (pos == 1) {
+                return 0;
+            } else if (pos == 2) {
+                return 1;
+            }
          return pos < fibonacciArray.length ? fibonacciArray[pos + 1] : null;
 
         }

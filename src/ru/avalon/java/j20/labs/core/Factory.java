@@ -12,6 +12,7 @@ public interface Factory<Result, Param> {
     /**
      * Возвращает экземпляр, создаваемый фабрикой.
      *
+     * @param param
      * @return новый экземпляр типа {@code T}
      */
     Result getInstance(Param param);

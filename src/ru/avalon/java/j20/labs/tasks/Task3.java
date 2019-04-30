@@ -35,9 +35,9 @@ public class Task3 implements Task {
          * 4. С использованием отладчика проверьте корректность
          *    выполнения задания.
          */
-    Iterable<Integer> numbers = new Fibonacci(10);
-        Integer sum = 0;
-        for(Integer number : numbers){
+    Iterable<Integer> numbers = new Fibonacci(20);
+        int sum = 0;
+        for(int number : numbers){
             sum+=number;
     }
 }
